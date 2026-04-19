@@ -1,0 +1,7 @@
+# Copy to local.properties (git-ignored) and fill in.
+# SDK path is written automatically by Android Studio on first open.
+
+sdk.dir=/Users/YOUR_USER/Library/Android/sdk
+
+supabase.url=https://xxxxx.supabase.co
+supabase.anonKey=eyJhbGc...

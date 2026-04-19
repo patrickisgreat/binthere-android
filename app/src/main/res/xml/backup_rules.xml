@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude the Room database and any auth tokens from cloud backup. -->
+    <exclude domain="database" path="binthere.db" />
+    <exclude domain="sharedpref" path="auth_prefs.xml" />
+    <exclude domain="sharedpref" path="supabase_session.xml" />
+</full-backup-content>

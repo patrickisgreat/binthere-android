@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Stylized bin/box silhouette inside the 72dp safe zone (18..90). -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M32,40 L76,40 L72,80 L36,80 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M30,36 L78,36 L78,42 L30,42 Z" />
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M44,36 L44,30 Q44,26 48,26 L60,26 Q64,26 64,30 L64,36" />
+</vector>
