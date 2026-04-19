@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">binthere</string>
+
+    <string name="nav_search">Search</string>
+    <string name="nav_bins">Bins</string>
+    <string name="nav_zones">Zones</string>
+    <string name="nav_scanner">Scan</string>
+    <string name="nav_settings">Settings</string>
+</resources>
