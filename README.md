@@ -32,3 +32,7 @@ Build and run:
 ## Architecture + conventions
 
 See [CLAUDE.md](CLAUDE.md) for the full architecture, testing, and workflow guide.
+
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for the slice-by-slice plan toward feature parity with iOS.
