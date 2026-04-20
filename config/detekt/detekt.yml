@@ -37,9 +37,6 @@ complexity:
   TooManyFunctions:
     thresholdInFiles: 20
 
-formatting:
-  active: false  # ktlint owns formatting
-
 empty-blocks:
   EmptyFunctionBlock:
     ignoreOverridden: true
