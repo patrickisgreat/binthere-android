@@ -24,9 +24,10 @@ val keystoreProperties =
 fun localString(
     key: String,
     fallback: String = "",
-): String = localProperties.getProperty(key)
-    ?: System.getenv(key.uppercase().replace('.', '_'))
-    ?: fallback
+): String =
+    localProperties.getProperty(key)
+        ?: System.getenv(key.uppercase().replace('.', '_'))
+        ?: fallback
 
 android {
     namespace = "app.binthere"
