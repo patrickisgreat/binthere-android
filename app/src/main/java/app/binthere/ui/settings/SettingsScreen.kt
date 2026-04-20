@@ -5,14 +5,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import app.binthere.ui.components.PlaceholderScreen
 import app.binthere.ui.theme.BinthereTheme
 
-const val SettingsTestTag = "screen.settings"
+const val SETTINGS_TEST_TAG = "screen.settings"
 
 @Composable
 fun SettingsScreen() {
     PlaceholderScreen(
         title = "Settings",
         subtitle = "Account, household, notifications, API keys.",
-        testTag = SettingsTestTag,
+        testTag = SETTINGS_TEST_TAG,
     )
 }
 

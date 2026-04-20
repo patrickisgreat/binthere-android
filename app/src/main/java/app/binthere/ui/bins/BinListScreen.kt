@@ -5,14 +5,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import app.binthere.ui.components.PlaceholderScreen
 import app.binthere.ui.theme.BinthereTheme
 
-const val BinListTestTag = "screen.bins"
+const val BIN_LIST_TEST_TAG = "screen.bins"
 
 @Composable
 fun BinListScreen() {
     PlaceholderScreen(
         title = "Bins",
         subtitle = "Your bins will show up here.",
-        testTag = BinListTestTag,
+        testTag = BIN_LIST_TEST_TAG,
     )
 }
 

@@ -22,11 +22,12 @@ fun PlaceholderScreen(
     testTag: String,
 ) {
     Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(24.dp)
-            .testTag(testTag)
-            .semantics { contentDescription = title },
+        modifier =
+            Modifier
+                .fillMaxSize()
+                .padding(24.dp)
+                .testTag(testTag)
+                .semantics { contentDescription = title },
         contentAlignment = Alignment.Center,
     ) {
         Column(
