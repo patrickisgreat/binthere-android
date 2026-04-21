@@ -9,18 +9,25 @@ plugins {
     alias(libs.plugins.hilt)
 }
 
-val localProperties = Properties().apply {
-    val file = rootProject.file("local.properties")
-    if (file.exists()) file.reader().use { load(it) }
-}
+val localProperties =
+    Properties().apply {
+        val file = rootProject.file("local.properties")
+        if (file.exists()) file.reader().use { load(it) }
+    }
 
-val keystoreProperties = Properties().apply {
-    val file = rootProject.file("keystore.properties")
-    if (file.exists()) file.reader().use { load(it) }
-}
+val keystoreProperties =
+    Properties().apply {
+        val file = rootProject.file("keystore.properties")
+        if (file.exists()) file.reader().use { load(it) }
+    }
 
-fun localString(key: String, fallback: String = ""): String =
-    localProperties.getProperty(key) ?: System.getenv(key.uppercase().replace('.', '_')) ?: fallback
+fun localString(
+    key: String,
+    fallback: String = "",
+): String =
+    localProperties.getProperty(key)
+        ?: System.getenv(key.uppercase().replace('.', '_'))
+        ?: fallback
 
 android {
     namespace = "app.binthere"
@@ -72,11 +79,12 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
-        freeCompilerArgs += listOf(
-            "-opt-in=kotlin.RequiresOptIn",
-            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
-            "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
-        )
+        freeCompilerArgs +=
+            listOf(
+                "-opt-in=kotlin.RequiresOptIn",
+                "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+                "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+            )
     }
 
     buildFeatures {

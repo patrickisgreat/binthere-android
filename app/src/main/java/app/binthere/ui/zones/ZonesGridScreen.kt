@@ -5,14 +5,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import app.binthere.ui.components.PlaceholderScreen
 import app.binthere.ui.theme.BinthereTheme
 
-const val ZonesGridTestTag = "screen.zones"
+const val ZONES_GRID_TEST_TAG = "screen.zones"
 
 @Composable
 fun ZonesGridScreen() {
     PlaceholderScreen(
         title = "Zones",
         subtitle = "Group bins by location: garage, kitchen, closet.",
-        testTag = ZonesGridTestTag,
+        testTag = ZONES_GRID_TEST_TAG,
     )
 }
 

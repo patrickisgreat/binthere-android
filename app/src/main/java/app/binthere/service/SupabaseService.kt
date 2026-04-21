@@ -9,6 +9,8 @@ import javax.inject.Singleton
  * from the SDK so future backend swaps touch one file.
  */
 @Singleton
-class SupabaseService @Inject constructor(
-    val client: SupabaseClient,
-)
+class SupabaseService
+    @Inject
+    constructor(
+        val client: SupabaseClient,
+    )

@@ -5,14 +5,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import app.binthere.ui.components.PlaceholderScreen
 import app.binthere.ui.theme.BinthereTheme
 
-const val QrScannerTestTag = "screen.scanner"
+const val QR_SCANNER_TEST_TAG = "screen.scanner"
 
 @Composable
 fun QrScannerScreen() {
     PlaceholderScreen(
         title = "Scan",
         subtitle = "Point at a bin QR to jump to its contents.",
-        testTag = QrScannerTestTag,
+        testTag = QR_SCANNER_TEST_TAG,
     )
 }
 

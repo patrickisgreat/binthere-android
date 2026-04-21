@@ -12,11 +12,20 @@ import app.binthere.R
 import kotlinx.serialization.Serializable
 
 sealed interface TopLevelRoute {
-    @Serializable data object Search : TopLevelRoute
-    @Serializable data object Bins : TopLevelRoute
-    @Serializable data object Zones : TopLevelRoute
-    @Serializable data object Scanner : TopLevelRoute
-    @Serializable data object Settings : TopLevelRoute
+    @Serializable
+    data object Search : TopLevelRoute
+
+    @Serializable
+    data object Bins : TopLevelRoute
+
+    @Serializable
+    data object Zones : TopLevelRoute
+
+    @Serializable
+    data object Scanner : TopLevelRoute
+
+    @Serializable
+    data object Settings : TopLevelRoute
 }
 
 enum class TopLevelDestination(

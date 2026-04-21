@@ -66,10 +66,11 @@ fun BinthereRoot() {
     }
 }
 
-private fun NavDestination?.isOn(dest: TopLevelDestination): Boolean = when (dest) {
-    TopLevelDestination.SEARCH -> this?.hasRoute<TopLevelRoute.Search>() == true
-    TopLevelDestination.BINS -> this?.hasRoute<TopLevelRoute.Bins>() == true
-    TopLevelDestination.ZONES -> this?.hasRoute<TopLevelRoute.Zones>() == true
-    TopLevelDestination.SCANNER -> this?.hasRoute<TopLevelRoute.Scanner>() == true
-    TopLevelDestination.SETTINGS -> this?.hasRoute<TopLevelRoute.Settings>() == true
-}
+private fun NavDestination?.isOn(dest: TopLevelDestination): Boolean =
+    when (dest) {
+        TopLevelDestination.SEARCH -> this?.hasRoute<TopLevelRoute.Search>() == true
+        TopLevelDestination.BINS -> this?.hasRoute<TopLevelRoute.Bins>() == true
+        TopLevelDestination.ZONES -> this?.hasRoute<TopLevelRoute.Zones>() == true
+        TopLevelDestination.SCANNER -> this?.hasRoute<TopLevelRoute.Scanner>() == true
+        TopLevelDestination.SETTINGS -> this?.hasRoute<TopLevelRoute.Settings>() == true
+    }

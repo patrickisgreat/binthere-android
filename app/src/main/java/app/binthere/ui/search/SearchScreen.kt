@@ -5,14 +5,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import app.binthere.ui.components.PlaceholderScreen
 import app.binthere.ui.theme.BinthereTheme
 
-const val SearchTestTag = "screen.search"
+const val SEARCH_TEST_TAG = "screen.search"
 
 @Composable
 fun SearchScreen() {
     PlaceholderScreen(
         title = "Search",
         subtitle = "Find any item across every bin.",
-        testTag = SearchTestTag,
+        testTag = SEARCH_TEST_TAG,
     )
 }
 

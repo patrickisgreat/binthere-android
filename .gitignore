@@ -51,3 +51,6 @@ captures/
 
 # Node (for any tooling scripts)
 node_modules/
+
+# Claude Code session state (never commit)
+.claude/

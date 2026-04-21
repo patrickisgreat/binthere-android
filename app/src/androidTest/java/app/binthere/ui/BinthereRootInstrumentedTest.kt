@@ -5,17 +5,16 @@ import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
-import app.binthere.ui.bins.BinListTestTag
-import app.binthere.ui.scanner.QrScannerTestTag
-import app.binthere.ui.search.SearchTestTag
-import app.binthere.ui.settings.SettingsTestTag
+import app.binthere.ui.bins.BIN_LIST_TEST_TAG
+import app.binthere.ui.scanner.QR_SCANNER_TEST_TAG
+import app.binthere.ui.search.SEARCH_TEST_TAG
+import app.binthere.ui.settings.SETTINGS_TEST_TAG
 import app.binthere.ui.theme.BinthereTheme
-import app.binthere.ui.zones.ZonesGridTestTag
+import app.binthere.ui.zones.ZONES_GRID_TEST_TAG
 import org.junit.Rule
 import org.junit.Test
 
 class BinthereRootInstrumentedTest {
-
     @get:Rule
     val composeRule = createComposeRule()
 
@@ -30,18 +29,18 @@ class BinthereRootInstrumentedTest {
     @Test
     fun bottomNav_startsOnBinsAndSwitchesToScanner() {
         composeRule.setContent { BinthereTheme { BinthereRoot() } }
-        composeRule.onNodeWithTag(BinListTestTag).assertIsDisplayed()
+        composeRule.onNodeWithTag(BIN_LIST_TEST_TAG).assertIsDisplayed()
 
         composeRule.onNodeWithText("Scan").performClick()
-        composeRule.onNodeWithTag(QrScannerTestTag).assertIsDisplayed()
+        composeRule.onNodeWithTag(QR_SCANNER_TEST_TAG).assertIsDisplayed()
 
         composeRule.onNodeWithText("Search").performClick()
-        composeRule.onNodeWithTag(SearchTestTag).assertIsDisplayed()
+        composeRule.onNodeWithTag(SEARCH_TEST_TAG).assertIsDisplayed()
 
         composeRule.onNodeWithText("Zones").performClick()
-        composeRule.onNodeWithTag(ZonesGridTestTag).assertIsDisplayed()
+        composeRule.onNodeWithTag(ZONES_GRID_TEST_TAG).assertIsDisplayed()
 
         composeRule.onNodeWithText("Settings").performClick()
-        composeRule.onNodeWithTag(SettingsTestTag).assertIsDisplayed()
+        composeRule.onNodeWithTag(SETTINGS_TEST_TAG).assertIsDisplayed()
     }
 }
