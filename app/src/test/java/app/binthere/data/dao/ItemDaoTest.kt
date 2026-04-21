@@ -8,7 +8,6 @@ import app.binthere.data.model.BinEntity
 import app.binthere.data.model.CustomAttributeEntity
 import app.binthere.data.model.ItemEntity
 import com.google.common.truth.Truth.assertThat
-import java.time.Instant
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.After
@@ -16,6 +15,7 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.annotation.Config
+import java.time.Instant
 
 @RunWith(AndroidJUnit4::class)
 @Config(sdk = [33])

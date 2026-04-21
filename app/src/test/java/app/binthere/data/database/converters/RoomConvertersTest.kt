@@ -1,8 +1,8 @@
 package app.binthere.data.database.converters
 
 import com.google.common.truth.Truth.assertThat
-import java.time.Instant
 import org.junit.Test
+import java.time.Instant
 
 class RoomConvertersTest {
     private val converters = RoomConverters()

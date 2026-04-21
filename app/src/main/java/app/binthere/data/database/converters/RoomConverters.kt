@@ -1,11 +1,11 @@
 package app.binthere.data.database.converters
 
 import androidx.room.TypeConverter
-import java.time.Instant
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.builtins.MapSerializer
 import kotlinx.serialization.builtins.serializer
 import kotlinx.serialization.json.Json
+import java.time.Instant
 
 private val roomJson = Json { ignoreUnknownKeys = true }
 private val stringListSerializer = ListSerializer(String.serializer())
