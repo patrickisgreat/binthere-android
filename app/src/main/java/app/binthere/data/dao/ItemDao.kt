@@ -28,7 +28,10 @@ interface ItemDao {
             "(name LIKE '%' || :query || '%' OR itemDescription LIKE '%' || :query || '%') " +
             "ORDER BY name",
     )
-    fun search(householdId: String, query: String): Flow<List<ItemEntity>>
+    fun search(
+        householdId: String,
+        query: String,
+    ): Flow<List<ItemEntity>>
 
     @Query("SELECT * FROM items WHERE householdId = :householdId AND isCheckedOut = 1 ORDER BY updatedAt DESC")
     fun observeCheckedOut(householdId: String): Flow<List<ItemEntity>>
@@ -40,7 +43,11 @@ interface ItemDao {
     suspend fun upsertAll(items: List<ItemEntity>)
 
     @Query("UPDATE items SET binId = :newBinId, updatedAt = :updatedAt WHERE id = :itemId")
-    suspend fun moveToBin(itemId: String, newBinId: String?, updatedAt: Long)
+    suspend fun moveToBin(
+        itemId: String,
+        newBinId: String?,
+        updatedAt: Long,
+    )
 
     @Query("DELETE FROM items WHERE id = :id")
     suspend fun deleteById(id: String)

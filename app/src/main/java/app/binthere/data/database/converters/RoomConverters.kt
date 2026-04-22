@@ -23,18 +23,14 @@ class RoomConverters {
     fun epochMillisToInstant(value: Long?): Instant? = value?.let(Instant::ofEpochMilli)
 
     @TypeConverter
-    fun stringListToJson(value: List<String>?): String? =
-        value?.let { roomJson.encodeToString(stringListSerializer, it) }
+    fun stringListToJson(value: List<String>?): String? = value?.let { roomJson.encodeToString(stringListSerializer, it) }
 
     @TypeConverter
-    fun jsonToStringList(value: String?): List<String>? =
-        value?.let { roomJson.decodeFromString(stringListSerializer, it) }
+    fun jsonToStringList(value: String?): List<String>? = value?.let { roomJson.decodeFromString(stringListSerializer, it) }
 
     @TypeConverter
-    fun stringMapToJson(value: Map<String, String>?): String? =
-        value?.let { roomJson.encodeToString(stringMapSerializer, it) }
+    fun stringMapToJson(value: Map<String, String>?): String? = value?.let { roomJson.encodeToString(stringMapSerializer, it) }
 
     @TypeConverter
-    fun jsonToStringMap(value: String?): Map<String, String>? =
-        value?.let { roomJson.decodeFromString(stringMapSerializer, it) }
+    fun jsonToStringMap(value: String?): Map<String, String>? = value?.let { roomJson.decodeFromString(stringMapSerializer, it) }
 }

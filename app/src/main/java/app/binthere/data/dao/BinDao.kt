@@ -23,7 +23,10 @@ interface BinDao {
     fun observeWithItems(id: String): Flow<BinWithItems?>
 
     @Query("SELECT * FROM bins WHERE code = :code AND householdId = :householdId LIMIT 1")
-    suspend fun findByCode(householdId: String, code: String): BinEntity?
+    suspend fun findByCode(
+        householdId: String,
+        code: String,
+    ): BinEntity?
 
     @Upsert
     suspend fun upsert(bin: BinEntity)
