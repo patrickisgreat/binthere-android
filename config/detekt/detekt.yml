@@ -42,6 +42,10 @@ complexity:
     ignoreDataClasses: true
   TooManyFunctions:
     thresholdInFiles: 20
+    thresholdInClasses: 20
+    thresholdInInterfaces: 20
+    thresholdInObjects: 20
+    thresholdInEnums: 20
 
 empty-blocks:
   EmptyFunctionBlock:
