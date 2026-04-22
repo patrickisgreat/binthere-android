@@ -25,6 +25,9 @@ junit = "4.13.2"
 mockk = "1.13.13"
 androidxTestJunit = "1.2.1"
 androidxTestEspresso = "3.6.1"
+androidxTestCoreKtx = "1.6.1"
+robolectric = "4.14.1"
+truth = "1.4.4"
 detekt = "1.23.7"
 ktlintPlugin = "12.1.1"
 
@@ -89,6 +92,9 @@ mockk-android = { group = "io.mockk", name = "mockk-android", version.ref = "moc
 
 androidx-test-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTestJunit" }
 androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxTestEspresso" }
+androidx-test-core-ktx = { group = "androidx.test", name = "core-ktx", version.ref = "androidxTestCoreKtx" }
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
